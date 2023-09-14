@@ -10,7 +10,7 @@ const ThanksScreen = () => {
         <div className="text">Thanks for Attempting the Quiz</div>
         <div className="button-container">
           <button onClick={() => window.location.href = '/'} className="button">Attempt Again</button>
-          <button className="button">Next Stage</button>
+          <button onClick={() => window.location.href = '/findDuplicates'} className="button">Next Stage</button>
         </div>
       </div>
     </div>
