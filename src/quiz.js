@@ -1,15 +1,9 @@
 import React, { useState } from 'react';
 import './Quiz.css';
 import image from './image.png';
-import { useHistory } from 'react-router-dom';
-import ThanksScreen from './ThanksScreen';
 
 function Quiz() {
-  // Sample data for the quiz
-  const quizData = {
-    questionText: 'What is the capital of France?',
-    options: ['A. Paris', 'B. London', 'C. Berlin', 'D. Madrid'],
-  };
+
   const questions = [
     {
       question: 'Does your child have limited speech (non-verbal or speaks in only short phrases)?',
@@ -54,8 +48,6 @@ function Quiz() {
   };
 
   const progressPercentage = ((currentQuestion + 1) / questions.length) * 100;
-  // Check if all questions are answered
-  const isLastQuestion = currentQuestion === questions.length - 1;
 
   return (
     
