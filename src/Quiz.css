@@ -121,3 +121,21 @@ body {
     background-color: #C5A3FF;
   }
   
+  @media screen and (max-width: 768px) {
+    .app {
+      flex-direction: column; /* Stack children vertically for mobile */
+    }
+  
+    .left-side {
+      margin-left: 20px; /* Adjust margin for smaller screens */
+    }
+  
+    .right-side {
+      margin-right: 20px; /* Adjust margin for smaller screens */
+    }
+  
+    .question-image {
+      max-width: 80%; /* Adjust image size for smaller screens */
+    }
+  }
+  
